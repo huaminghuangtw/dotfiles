@@ -1,0 +1,34 @@
+{
+  "workbench.statusBar.visible": false,
+  "window.customTitleBarVisibility": "windowed",
+  "security.workspace.trust.untrustedFiles": "open",
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "workbench.activityBar.location": "hidden",
+  "security.promptForLocalFileProtocolHandling": false,
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "hidden",
+  "editor.hideCursorInOverviewRuler": true,
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "files.exclude": {
+    "**/.git": false,
+    "**/.specstory": false
+  },
+  "workbench.startupEditor": "none",
+  "files.autoSave": "afterDelay",
+  "git.openRepositoryInParentFolders": "never",
+  "terminal.integrated.initialHint": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "github.copilot.selectedCompletionModel": "",
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": true,
+    "scminput": false
+  },
+  "editor.minimap.enabled": false,
+  "python.defaultInterpreterPath": "/usr/bin/python3",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "chat.viewSessions.orientation": "stacked",
+}
