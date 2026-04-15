@@ -1,0 +1,5 @@
+filter_exec: "/Applications/Obsidian.app"
+
+extra_includes:
+  - "../match/_md_snippets.yml"
+  - "../match/_journal_snippets.yml"

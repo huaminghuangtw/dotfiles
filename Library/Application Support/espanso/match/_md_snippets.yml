@@ -1,0 +1,3 @@
+matches:
+  - trigger: "||"
+    replace: "\n| ![]() |\n| :-: |\n| <sub>[Source]()</sub> |\n"

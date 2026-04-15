@@ -1,0 +1,9 @@
+# espanso configuration file
+
+# https://espanso.org/docs/configuration/options
+
+toggle_key: OFF
+auto_restart: true
+search_shortcut: off
+search_trigger: off
+show_icon: false
