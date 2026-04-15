@@ -1,0 +1,93 @@
+{
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.10.0",
+  "schemes" : [
+    {
+      "scrolling" : {
+        "reverse" : {
+          "vertical" : true
+        },
+        "speed" : {
+          "vertical" : 4
+        },
+        "acceleration" : {
+          "vertical" : 3
+        }
+      },
+      "if" : {
+        "device" : {
+          "productName" : "MX Master 3S",
+          "productID" : "0xb034",
+          "vendorID" : "0x46d",
+          "category" : "mouse",
+          "serialNumber" : "E938F1B6"
+        }
+      }
+    },
+    {
+      "if" : {
+        "device" : {
+          "category" : "mouse",
+          "vendorID" : "0x93a",
+          "productID" : "0x2510",
+          "productName" : "USB Optical Mouse"
+        }
+      },
+      "scrolling" : {
+        "reverse" : {
+          "vertical" : true
+        },
+        "acceleration" : {
+          "vertical" : 1
+        }
+      }
+    },
+    {
+      "scrolling" : {
+        "reverse" : {
+          "vertical" : true
+        },
+        "acceleration" : {
+          "vertical" : 1
+        }
+      },
+      "if" : {
+        "device" : {
+          "vendorID" : "0x46d",
+          "productName" : "USB Receiver",
+          "category" : "mouse",
+          "productID" : "0xc548"
+        }
+      }
+    },
+    {
+      "if" : {
+        "device" : {
+          "productName" : "USB Optical Mouse",
+          "vendorID" : "0x1bcf",
+          "productID" : "0x7",
+          "category" : "mouse"
+        }
+      },
+      "scrolling" : {
+        "reverse" : {
+          "vertical" : true
+        }
+      }
+    },
+    {
+      "if" : {
+        "device" : {
+          "productName" : "USB Mouse",
+          "vendorID" : "0x1c4f",
+          "category" : "mouse",
+          "productID" : "0x48"
+        }
+      },
+      "scrolling" : {
+        "reverse" : {
+          "vertical" : true
+        }
+      }
+    }
+  ]
+}
