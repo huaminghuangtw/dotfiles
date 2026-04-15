@@ -13,14 +13,12 @@
   "git.autofetch": true,
   "files.exclude": {
     "**/.git": false,
-    "**/.specstory": false
   },
   "workbench.startupEditor": "none",
   "files.autoSave": "afterDelay",
   "git.openRepositoryInParentFolders": "never",
   "terminal.integrated.initialHint": false,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "github.copilot.selectedCompletionModel": "",
+  "js/ts.updateImportsOnFileMove.enabled": "always",
   "github.copilot.enable": {
     "*": true,
     "plaintext": false,
@@ -29,6 +27,6 @@
   },
   "editor.minimap.enabled": false,
   "python.defaultInterpreterPath": "/usr/bin/python3",
-  "typescript.updateImportsOnFileMove.enabled": "always",
   "chat.viewSessions.orientation": "stacked",
+  "chat.planAgent.defaultModel": "GPT-4.1 (copilot)",
 }
