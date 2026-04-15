@@ -1,0 +1,225 @@
+[user]
+    name = Hua-Ming Huang
+    email = huaming.huang.tw@gmail.com
+    signingkey = ~/.ssh/id_rsa.pub
+
+[github]
+    user = huaminghuangtw
+    tokentype = ssh
+
+[commit]
+    gpgSign = true
+
+[gpg]
+    format = ssh
+
+[include]
+    path = ~/.git-sendemail
+
+[core]
+    editor = code --wait
+    ignorecase = false
+
+[help]
+    autocorrect = 1
+
+[init]
+    defaultBranch = main
+
+[push]
+    default = current
+    autoSetupRemote = true
+    
+[pull]
+    default = current
+    rebase = true
+    
+[diff]
+    mnemonicprefix = true
+    ignoreSubmodules = dirty
+    
+[branch]
+    autosetuprebase = always
+    
+[apply]
+    # Detect whitespace errors when applying a patch
+    whitespace = fix
+    
+[submodule]
+    recurse = false
+
+[color]
+    ui = true
+    branch = auto
+    diff = auto
+    status = auto
+
+[pretty]
+    myformat = format:%C(yellow)%h %Cred%cr %Cblue(%an)%C(cyan)%d%Creset %s
+
+# See more examples: https://github.com/GitAlias/gitalias
+[alias]
+    cfg = config --global --edit
+
+    # Clone a repository including all submodules
+    c = clone --recursive
+
+    start = !"git init && git add . && git commit --allow-empty -m 'Initial commit'"
+    
+    save = !"git add --all && git commit -m 'SAVEPOINT'"
+    cm = !"git add . && git commit -m"
+    
+    rao = remote add origin
+    rau = "!f() { git remote add upstream \"$1\" && git remote set-url --push upstream no_push; }; f"
+    remotes = remote -v
+
+    st = status -s
+    
+    d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
+    
+    ls = ls-files
+    ls-ignored = ls-files --others --i --exclude-standard
+
+    last = log -1 HEAD --stat --pretty=myformat
+    ol = log --pretty=myformat
+    changelog = log --pretty='- %s' > CHANGELOG.md
+
+    f = fetch
+    
+    up = !"git checkout main && git pull --rebase --no-recurse-submodules origin main && git submodule-update"
+    
+    pull-force = !"git branch backup && git fetch --all && git reset --hard origin/${1-main}"
+
+    br = branch -a
+    # Delete local branches
+    br-del-local = branch --delete
+    # Delete remote branches
+    br-del-remote = push origin --delete
+    # Switch to a branch, creating it if doesn't exist
+    goto = "!f() { git switch "$1" 2>/dev/null || git switch -c "$1"; }; f"
+
+    p = push
+    pt = push --tags
+    
+    tags = tag -n1 --list
+    
+    stashes = stash list
+    
+    # Modify the latest commit with all current changes and a new commit message
+    amend = commit --amend --all -m
+
+    cleanup = !"git remote prune origin && git gc && git clean -dfx && git stash clear"
+    
+    # Delete local branches that have been merged into the specified (or default) base branch, and prune remote-tracking branches.
+    cleanup-merged-local-branches = "!f() { \
+        local base_branch=${1:-main}; \
+        git branch --merged \"$base_branch\" | grep -vE \"(^\\*|$base_branch)\" | xargs -r git branch -d; \
+        git fetch -p; \
+    }; f"
+
+    undo = reset HEAD~ --mixed
+    undo-hard = !"git reset --hard HEAD^"
+    
+    # Reset work that you never committed.
+    # Note that you can run the `git reflog` command and find the SHA of the commit, if you realize later that you made a mistake with the reset.
+    # This alias can be used to replace the `git reset HEAD --hard` command.
+    wipe = "!f() { \
+        rev=$(git rev-parse ${1-HEAD}); \
+        git reset $rev --hard; \
+    }; f"
+    
+    # Run this alias before merge to check for any conflicts
+    merge-test = "!f() { \
+        if [ -z \"$1\" ]; then \
+            read -p \"Enter the branch you want to test merge: \" branch; \
+        else \
+            branch=\"$1\"; \
+        fi; \
+        if ! git diff-index --quiet HEAD --; then \
+            echo \"You have uncommitted changes. Please commit or stash them before merging.\"; \
+            return 1; \
+        fi; \
+        git merge --no-commit --no-ff \"$branch\" && git merge --abort; \
+        echo \"Merge aborted.\"; \
+        git status; \
+    }; f"
+    
+    ignore-unignored = "!f() { \
+        echo \"Removing untracked files that were previously ignored...\"; \
+        git rm -r --cached --ignore-unmatch . && \
+        git add . && \
+        git commit -m \".gitignore fix: Remove ignored files\"; \
+        git update-index --assume-unchanged . && \
+        git push; \
+    }; f"
+
+    unignore-ignored = "!f() { \
+        git add -f \"$1\" && \
+        git add . && \
+        git commit -m '.gitignore fix' && \
+        git update-index --assume-unchanged \"$1\" && \
+        git push; \
+    }; f"
+    
+    # Open the GitHub repository
+    open = "!f() { \
+        url=$(git remote get-url origin | \
+            sed -e 's/git@github.com:/https:\\/\\/github.com\\//' -e 's/.git$//'); \
+        open \"$url\"; \
+    }; f"
+
+    # Reinitialize a Git repository while keeping the existing files and commit history
+    fix-repo = "!f() { \
+        repo_url=$(git config --get remote.origin.url); \
+        if [ -z \"$repo_url\" ]; then \
+            echo '❌ No remote.origin.url found'; \
+            exit 1; \
+        fi; \
+        mv -v .git .git_old && \
+        git init && \
+        git remote add origin \"$repo_url\" && \
+        git fetch && \
+        git reset origin/main --mixed && \
+        if [ -d \".git_old/hooks\" ]; then \
+            echo '📁 Copying hooks from old .git folder...'; \
+            cp -r .git_old/hooks .git/ && \
+            find .git/hooks -type f -exec chmod +x {} \\;; \
+        fi && \
+        mv .git_old ~/.Trash/.git_old_$(date +%Y%m%d_%H%M%S); \
+    }; f"
+
+    # Keep gh-pages up-to-date with the main branch
+    sync-ghpages = !"git checkout gh-pages && git rebase main && git push origin gh-pages && git checkout main"
+    
+    submodule-add="!f() { \
+        local force_option=; \
+        if [ "$1" = "--force" ]; then \
+            force_option="--force"; \
+            shift; \
+        fi; \
+        if [ $# -lt 1 ] || [ $# -gt 2 ]; then \
+            echo "Usage: git submodule-add [--force] <URL_to_Git_repo_of_submodule> [<path/to/submodule>]" >&2; \
+            return 1; \
+        fi; \
+        git submodule add $force_option "$1" "${2:-}"; \
+    }; f"
+    
+    submodule-remove = "!f() { \
+        if [ $# -ne 1 ]; then \
+            echo 'Usage: git submodule-remove <path/to/submodule>' >&2; \
+            return 1; \
+        fi; \
+        local path=\"$1\"; \
+        git submodule deinit -f -- \"$path\" && \
+        rm -rf .git/modules/\"$path\" && \
+        git rm -f \"$path\"; \
+    }; f"
+    
+    submodule-update="!f() { \
+        git submodule foreach \"git wipe && git fetch origin && git checkout main && git pull origin main\" && \
+        git submodule status; \
+    }; f"
+    
+    submodule-status="!f() { \
+        git submodule status --recursive; \
+    }; f"
