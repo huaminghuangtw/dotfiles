@@ -1,5 +1,5 @@
 matches:
   - trigger: ";["
-    replace: "([[$|$ continued)"
+    replace: "([[$|$ continued) "
   - trigger: ";]"
-    replace: "([[$|$ related)"
+    replace: "([[$|$ related) "
