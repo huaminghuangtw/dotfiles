@@ -4,6 +4,6 @@
 
 matches:
   - trigger: ":dev"
-    replace: "http://localhost:1234"
+    replace: "http://localhost:4321"
   - trigger: ":‰'"
     replace: "’"
