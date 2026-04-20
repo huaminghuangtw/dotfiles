@@ -29,4 +29,5 @@
   "python.defaultInterpreterPath": "/usr/bin/python3",
   "chat.viewSessions.orientation": "stacked",
   "chat.planAgent.defaultModel": "GPT-4.1 (copilot)",
+  "breadcrumbs.enabled": false,
 }
