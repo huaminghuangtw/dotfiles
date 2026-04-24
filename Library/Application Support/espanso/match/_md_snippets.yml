@@ -1,3 +1,5 @@
 matches:
   - trigger: "||"
-    replace: "\n| ![]() |\n| :-: |\n| <sub>[Source]()</sub> |\n"
+    replace: "\n|  |\n| :-: |\n| <sub>[Source]()</sub> |\n"
+  - trigger: "!["
+    replace: "![](_attachments/$|$)"

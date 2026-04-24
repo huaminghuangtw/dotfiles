@@ -7,3 +7,5 @@ matches:
     replace: "http://localhost:4321"
   - trigger: ":‰'"
     replace: "’"
+  - trigger: ":l"
+    replace: "line:($|$)"
