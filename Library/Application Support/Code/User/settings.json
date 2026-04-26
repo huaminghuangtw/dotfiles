@@ -31,4 +31,6 @@
   "chat.planAgent.defaultModel": "GPT-4.1 (copilot)",
   "breadcrumbs.enabled": false,
   "workbench.colorTheme": "Dark Modern",
+  "git.postCommitCommand": "push",
+  "git.rememberPostCommitCommand": true,
 }
