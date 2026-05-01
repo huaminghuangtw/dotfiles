@@ -2,4 +2,4 @@ matches:
   - trigger: "||"
     replace: "\n|  |\n| :-: |\n| <sub>[Source]()</sub> |\n"
   - trigger: "!["
-    replace: "![](_attachments/$|$)"
+    replace: '![](_attachments/$|$ "（圖片來源：）")'
