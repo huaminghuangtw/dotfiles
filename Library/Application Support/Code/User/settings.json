@@ -33,4 +33,5 @@
   "workbench.colorTheme": "Dark Modern",
   "git.postCommitCommand": "push",
   "git.rememberPostCommitCommand": true,
+  "css.lint.unknownAtRules": "ignore",
 }

@@ -3,9 +3,9 @@
 # https://espanso.org/docs/matches/basics
 
 matches:
-  - trigger: ":dev"
+  - trigger: ";dev"
     replace: "http://localhost:4321"
   - trigger: ":‰'"
     replace: "’"
-  - trigger: ":l"
+  - trigger: ";l"
     replace: "line:($|$)"
