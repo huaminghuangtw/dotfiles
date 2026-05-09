@@ -10,4 +10,4 @@ Add relevant quotes at the top, using the format (no double quotations):
 
 Add a section at the end listing related concepts, themes, or topics that connect to the main idea of the note.
 
-Do not modify the original content of the note (especially the frontmatters), but feel free to expand on it and provide additional insights.
+Do not modify the original content of the note, but feel free to expand on it and provide additional insights.
