@@ -3,3 +3,5 @@ matches:
     replace: "([[$|$ continued) "
   - trigger: ";]"
     replace: "([[$|$ related) "
+  - trigger: ";p"
+    replace: "沿途經過："

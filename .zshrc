@@ -10,9 +10,8 @@ export GPG_TTY=$(tty)
 export PATH="/Library/TeX/texbin:$PATH"
 export PATH=$PATH:/Users/huaminghuang/Library/Python/3.9/bin/
 
-alias zshconfig='code ~/.zshrc'
+alias zshcfg='code ~/.zshrc'
 alias disable-animations='defaults write -g NSAutomaticWindowAnimationsEnabled -bool false'
-alias killcsd='killall corespeechd'
 alias auto-backup='"/Users/huaminghuang/Library/Mobile Documents/iCloud~md~obsidian/Documents/Second-Brain/Scripts/auto-backup.sh" "$(pwd)"'
 # pnpm
 export PNPM_HOME="/Users/huaminghuang/Library/pnpm"
@@ -22,3 +21,14 @@ case ":$PATH:" in
 esac
 # pnpm end
 alias dotfiles='/usr/bin/git --git-dir=/Users/huaminghuang/.dotfiles/ --work-tree=/Users/huaminghuang'
+
+fixmicrophone () {
+  sudo killall corespeechd
+  sudo killall coreaudiod
+}
+
+fixaudio () {
+  sudo rm /Library/Preferences/Audio/com.apple.audio.DeviceSettings.plist
+  sudo rm /Library/Preferences/Audio/com.apple.audio.SystemSettings.plist
+  sudo killall coreaudiod
+}
