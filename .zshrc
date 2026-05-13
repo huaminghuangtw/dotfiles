@@ -13,13 +13,6 @@ export PATH=$PATH:/Users/huaminghuang/Library/Python/3.9/bin/
 alias zshcfg='code ~/.zshrc'
 alias disable-animations='defaults write -g NSAutomaticWindowAnimationsEnabled -bool false'
 alias auto-backup='"/Users/huaminghuang/Library/Mobile Documents/iCloud~md~obsidian/Documents/Second-Brain/Scripts/auto-backup.sh" "$(pwd)"'
-# pnpm
-export PNPM_HOME="/Users/huaminghuang/Library/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-# pnpm end
 alias dotfiles='/usr/bin/git --git-dir=/Users/huaminghuang/.dotfiles/ --work-tree=/Users/huaminghuang'
 
 fixmicrophone () {
