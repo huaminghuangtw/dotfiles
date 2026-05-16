@@ -1,5 +1,5 @@
 matches:
   - trigger: "||"
-    replace: "\n|  |\n| :-: |\n| <sub>[Source]()</sub> |\n"
+    replace: "\n\n| ![]() |\n| :-: |\n| <sub>[Source]()</sub> |\n\n"
   - trigger: "!["
     replace: '![](_attachments/$|$ "（圖片來源：）")'
