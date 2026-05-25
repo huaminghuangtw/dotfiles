@@ -5,3 +5,5 @@ matches:
     replace: "([[$|$ related) "
   - trigger: ";p"
     replace: "沿途經過："
+  - trigger: ";i"
+    replace: "  > 💡 Inspired by"
