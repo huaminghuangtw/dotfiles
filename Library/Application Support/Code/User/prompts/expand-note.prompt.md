@@ -2,7 +2,7 @@
 name: p_expand-note
 ---
 
-Expand the note into a more detailed and comprehensive version. Add context, examples, and supporting details as appropriate, while preserving the original intent and tone. Output should be clear, well-structured, and suitable for evergreen notes.
+Find mature thoughts worth expanding. Expand the note into a more detailed and comprehensive version. Add context, examples, and supporting details as appropriate, while preserving the original intent and tone. Output should be clear, well-structured, and suitable for evergreen notes.
 
 Add relevant quotes at the top, using the format (no double quotations):
 
