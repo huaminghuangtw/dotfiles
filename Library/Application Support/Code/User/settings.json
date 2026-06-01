@@ -1,5 +1,4 @@
 {
-  "workbench.statusBar.visible": false,
   "window.customTitleBarVisibility": "windowed",
   "security.workspace.trust.untrustedFiles": "open",
   "github.copilot.nextEditSuggestions.enabled": true,
@@ -27,7 +26,6 @@
   },
   "editor.minimap.enabled": false,
   "python.defaultInterpreterPath": "/usr/bin/python3",
-  "chat.viewSessions.orientation": "stacked",
   "chat.planAgent.defaultModel": "GPT-4.1 (copilot)",
   "breadcrumbs.enabled": false,
   "workbench.colorTheme": "Dark Modern",
@@ -35,4 +33,6 @@
   "git.rememberPostCommitCommand": true,
   "css.lint.unknownAtRules": "ignore",
   "workbench.editor.enablePreview": false,
+  "chat.viewSessions.orientation": "stacked",
+  "workbench.statusBar.visible": false,
 }
