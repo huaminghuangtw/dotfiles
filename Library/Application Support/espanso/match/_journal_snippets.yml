@@ -6,4 +6,6 @@ matches:
   - trigger: ";p"
     replace: "沿途經過："
   - trigger: ";i"
-    replace: "  > 💡 Inspired by"
+    replace: "  > 💡 Inspired by $|$"
+  - trigger: ";t"
+    replace: "  > Thanks to $|$ 🙏"

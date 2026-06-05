@@ -35,4 +35,24 @@
   "workbench.editor.enablePreview": false,
   "chat.viewSessions.orientation": "stacked",
   "workbench.statusBar.visible": false,
+  "notebook.markdown.lineHeight": 1.8,
+  "markdown.extension.completion.enabled": true,
+  "markdown.extension.italic.indicator": "_",
+  "markdown.extension.print.theme": "dark",
+  "markdown.extension.tableFormatter.normalizeIndentation": true,
+  "[plaintext]": {
+    "editor.fontFamily": "Georgia"
+  },
+  "[python]": {
+    "editor.fontFamily": "Menlo"
+  },
+  "[json]": {
+    "editor.fontFamily": "Helvetica",
+  },
+  "[markdown]": {
+    "editor.fontFamily": "SF Pro Text",
+    "editor.lineHeight": 1.8
+  },
+  "editor.fontFamily": "Fira Code",
+  "editor.fontSize": 14,
 }
