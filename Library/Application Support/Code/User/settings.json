@@ -51,7 +51,7 @@
   },
   "[markdown]": {
     "editor.fontFamily": "SF Pro Text",
-    "editor.lineHeight": 1.8
+    "editor.lineHeight": 1.5
   },
   "editor.fontFamily": "Fira Code",
   "editor.fontSize": 14,
