@@ -55,4 +55,12 @@
   },
   "editor.fontFamily": "Fira Code",
   "editor.fontSize": 14,
+  "chat.tools.urls.autoApprove": {
+    "https://code.visualstudio.com": true,
+    "https://github.com/microsoft/vscode/wiki/*": true,
+    "https://docs.obsidian.md": {
+      "approveRequest": false,
+      "approveResponse": true
+    }
+  },
 }
