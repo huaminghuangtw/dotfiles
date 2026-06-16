@@ -88,8 +88,6 @@
     
     up = !"git checkout main && git pull --rebase --no-recurse-submodules origin main && git submodule-update"
     
-    pull-force = !"git branch backup && git fetch --all && git reset --hard origin/${1-main}"
-
     br = branch -a
     # Delete local branches
     br-del-local = branch --delete
@@ -128,22 +126,6 @@
         git reset $rev --hard; \
     }; f"
     
-    # Run this alias before merge to check for any conflicts
-    merge-test = "!f() { \
-        if [ -z \"$1\" ]; then \
-            read -p \"Enter the branch you want to test merge: \" branch; \
-        else \
-            branch=\"$1\"; \
-        fi; \
-        if ! git diff-index --quiet HEAD --; then \
-            echo \"You have uncommitted changes. Please commit or stash them before merging.\"; \
-            return 1; \
-        fi; \
-        git merge --no-commit --no-ff \"$branch\" && git merge --abort; \
-        echo \"Merge aborted.\"; \
-        git status; \
-    }; f"
-    
     ignore-unignored = "!f() { \
         echo \"Removing untracked files that were previously ignored...\"; \
         git rm -r --cached --ignore-unmatch . && \
@@ -168,29 +150,6 @@
         open \"$url\"; \
     }; f"
 
-    # Reinitialize a Git repository while keeping the existing files and commit history
-    fix-repo = "!f() { \
-        repo_url=$(git config --get remote.origin.url); \
-        if [ -z \"$repo_url\" ]; then \
-            echo '❌ No remote.origin.url found'; \
-            exit 1; \
-        fi; \
-        mv -v .git .git_old && \
-        git init && \
-        git remote add origin \"$repo_url\" && \
-        git fetch && \
-        git reset origin/main --mixed && \
-        if [ -d \".git_old/hooks\" ]; then \
-            echo '📁 Copying hooks from old .git folder...'; \
-            cp -r .git_old/hooks .git/ && \
-            find .git/hooks -type f -exec chmod +x {} \\;; \
-        fi && \
-        mv .git_old ~/.Trash/.git_old_$(date +%Y%m%d_%H%M%S); \
-    }; f"
-
-    # Keep gh-pages up-to-date with the main branch
-    sync-ghpages = !"git checkout gh-pages && git rebase main && git push origin gh-pages && git checkout main"
-    
     submodule-add="!f() { \
         local force_option=; \
         if [ "$1" = "--force" ]; then \

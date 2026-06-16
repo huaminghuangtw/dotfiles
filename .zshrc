@@ -12,6 +12,10 @@ alias zshcfg='code ~/.zshrc'
 alias auto-backup='"/Users/huaminghuang/Library/Mobile Documents/iCloud~md~obsidian/Documents/Second-Brain/Scripts/auto-backup.sh" "$(pwd)"'
 alias dotfiles='/usr/bin/git --git-dir=/Users/huaminghuang/.dotfiles/ --work-tree=/Users/huaminghuang'
 
+fixicloudsync() {
+  sudo killall bird
+}
+
 fixmicrophone () {
   sudo killall corespeechd
   sudo killall coreaudiod
