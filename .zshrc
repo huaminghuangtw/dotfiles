@@ -26,3 +26,14 @@ fixaudio () {
   sudo rm /Library/Preferences/Audio/com.apple.audio.SystemSettings.plist
   sudo killall coreaudiod
 }
+
+dlvideo() {
+  echo "Enter video url: "
+  read url
+  if [[ "$url" == *pornhub.com* ]]; then
+    yt-dlp --referer 'https://www.pornhub.com' \
+      -o "$HOME/Downloads/%(title)s.%(ext)s" "$url"
+  else
+    yt-dlp -o "$HOME/Downloads/%(title)s.%(ext)s" "$url"
+  fi
+}
