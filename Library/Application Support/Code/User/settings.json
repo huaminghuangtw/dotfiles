@@ -2,7 +2,7 @@
   "window.customTitleBarVisibility": "windowed",
   "security.workspace.trust.untrustedFiles": "open",
   "github.copilot.nextEditSuggestions.enabled": true,
-  "workbench.activityBar.location": "hidden",
+  "workbench.activityBar.location": "top",
   "security.promptForLocalFileProtocolHandling": false,
   "editor.scrollbar.horizontal": "hidden",
   "editor.scrollbar.vertical": "hidden",
@@ -33,7 +33,6 @@
   "git.rememberPostCommitCommand": true,
   "css.lint.unknownAtRules": "ignore",
   "workbench.editor.enablePreview": false,
-  "chat.viewSessions.orientation": "stacked",
   "workbench.statusBar.visible": false,
   "notebook.markdown.lineHeight": 1.8,
   "markdown.extension.completion.enabled": true,
@@ -63,4 +62,5 @@
       "approveResponse": true
     }
   },
+  "chat.viewSessions.orientation": "stacked",
 }
