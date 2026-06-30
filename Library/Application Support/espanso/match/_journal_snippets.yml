@@ -9,3 +9,5 @@ matches:
     replace: "  > 💡 Inspired by $|$"
   - trigger: ";t"
     replace: "  > Thanks to $|$ 🙏"
+  - trigger: ";c"
+    replace: "  > 兒時回憶 🌸"
