@@ -82,4 +82,5 @@
         "editorOverviewRuler.commentDraftForeground": "#0000",
     },
     "editor.minimap.enabled": false,
+    "editor.formatOnSave": true,
 }
