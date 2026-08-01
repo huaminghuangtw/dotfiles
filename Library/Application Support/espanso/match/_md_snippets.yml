@@ -1,5 +1,7 @@
 matches:
-  - trigger: "||"
-    replace: "\n\n| ![]() |\n| :-: |\n| <sub>[Source]()</sub> |\n\n"
-  - trigger: "!["
-    replace: '![](_attachments/$|$ "（圖片來源：）")'
+    - trigger: "||"
+      replace: "\n\n| ![]() |\n| :-: |\n| <sub>[Source]()</sub> |\n\n"
+    - trigger: "!so"
+      replace: '"圖片來源：$|$"'
+    - trigger: "!en"
+      replace: "enoughness-$|$.md#"

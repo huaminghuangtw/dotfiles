@@ -82,4 +82,11 @@
     },
     "editor.minimap.enabled": false,
     "editor.formatOnSave": true,
+    "accessibility.signals.chatUserActionRequired": {
+        "sound": "on"
+    },
+    "accessibility.signals.chatEditModifiedFile": {
+        "sound": "on"
+    },
+    "editor.accessibilitySupport": "off",
 }
