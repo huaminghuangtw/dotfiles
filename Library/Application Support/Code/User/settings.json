@@ -88,5 +88,20 @@
     "accessibility.signals.chatEditModifiedFile": {
         "sound": "on"
     },
-    "editor.accessibilitySupport": "off",
+    "editor.accessibilitySupport": "on",
+    "accessibility.signalOptions.volume": 80,
+    "accessibility.signals.chatRequestSent": {
+        "sound": "on"
+    },
+    "accessibility.signals.chatResponseReceived": {
+        "sound": "on"
+    },
+    "accessibility.signals.codeActionTriggered": {
+        "sound": "off"
+    },
+    "accessibility.signals.codeActionApplied": {
+        "sound": "off"
+    },
+    "workbench.editor.splitInGroupLayout": "vertical",
+    "editor.stickyScroll.enabled": false,
 }
