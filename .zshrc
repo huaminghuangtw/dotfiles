@@ -10,6 +10,7 @@ export PATH="$PATH:/Applications/Obsidian.app/Contents/MacOS"
 
 alias zshcfg='code ~/.zshrc'
 alias auto-backup='"/Users/huaminghuang/Library/Mobile Documents/iCloud~md~obsidian/Documents/Second-Brain/Scripts/auto-backup.sh" "$(pwd)"'
+alias upload-to-r2='python3 "/Users/huaminghuang/Library/Mobile Documents/iCloud~md~obsidian/Documents/Second-Brain/Scripts/upload-to-r2.py" "$(pwd)"'
 alias dotfiles='/usr/bin/git --git-dir=/Users/huaminghuang/.dotfiles/ --work-tree=/Users/huaminghuang'
 
 fixicloudsync() {
