@@ -104,5 +104,6 @@
     },
     "workbench.editor.splitInGroupLayout": "vertical",
     "editor.stickyScroll.enabled": false,
+    "zenMode.hideLineNumbers": false,
     "chat.permissions.default": "autopilot",
 }
