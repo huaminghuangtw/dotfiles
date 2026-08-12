@@ -128,4 +128,12 @@
         "command": "-deleteRight",
         "when": "textInputFocus",
     },
+    {
+        "key": "cmd+e",
+        "command": "editor.action.toggleScreenReaderAccessibilityMode"
+    },
+    {
+        "key": "shift+alt+f1",
+        "command": "-editor.action.toggleScreenReaderAccessibilityMode"
+    },
 ]
