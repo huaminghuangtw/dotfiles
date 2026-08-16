@@ -105,5 +105,6 @@
     "workbench.editor.splitInGroupLayout": "vertical",
     "editor.stickyScroll.enabled": false,
     "zenMode.hideLineNumbers": false,
-    "chat.permissions.default": "autopilot",
+    "chat.permissions.default": "autoApprove",
+    "chat.autopilot.advanced.enabled": true,
 }
