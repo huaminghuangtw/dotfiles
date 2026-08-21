@@ -107,4 +107,9 @@
     "zenMode.hideLineNumbers": false,
     "chat.permissions.default": "autoApprove",
     "chat.autopilot.advanced.enabled": true,
+    "chat.titleBar.openInAgentsWindow.enabled": false,
+    "workbench.layoutControl.enabled": false,
+    "workbench.navigationControl.enabled": false,
+    "window.commandCenter": false,
+    "workbench.browser.showInTitleBar": false,
 }
