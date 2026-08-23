@@ -88,7 +88,7 @@
     "accessibility.signals.chatEditModifiedFile": {
         "sound": "on"
     },
-    "editor.accessibilitySupport": "off",
+    "editor.accessibilitySupport": "on",
     "accessibility.signalOptions.volume": 80,
     "accessibility.signals.chatRequestSent": {
         "sound": "on"
