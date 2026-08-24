@@ -112,4 +112,5 @@
     "workbench.navigationControl.enabled": false,
     "window.commandCenter": false,
     "workbench.browser.showInTitleBar": false,
+    "python.createEnvironment.trigger": "off",
 }
