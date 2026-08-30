@@ -113,4 +113,6 @@
     "window.commandCenter": false,
     "workbench.browser.showInTitleBar": false,
     "python.createEnvironment.trigger": "off",
+    "chat.contextUsage.enabled": false,
+    "chat.viewSessions.enabled": false,
 }
