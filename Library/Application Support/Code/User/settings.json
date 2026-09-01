@@ -59,7 +59,6 @@
             "approveResponse": true,
         },
     },
-    "chat.viewSessions.orientation": "stacked",
     "workbench.colorCustomizations": {
         "editor.hideCursorInOverviewRuler": true,
         "editorOverviewRuler.border": "#0000",
@@ -114,5 +113,5 @@
     "workbench.browser.showInTitleBar": false,
     "python.createEnvironment.trigger": "off",
     "chat.contextUsage.enabled": false,
-    "chat.viewSessions.enabled": false,
+    "chat.viewSessions.orientation": "stacked",
 }
