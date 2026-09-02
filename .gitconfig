@@ -182,3 +182,5 @@
     submodule-status="!f() { \
         git submodule status --recursive; \
     }; f"
+[maintenance]
+	repo = /Users/huaminghuang/Library/Mobile Documents/iCloud~is~workflow~my~workflows/Documents/Shortcutomation

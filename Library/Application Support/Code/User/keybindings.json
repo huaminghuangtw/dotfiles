@@ -145,4 +145,13 @@
         "command": "workbench.action.toggleMaximizedPanel",
         "when": "panelAlignment == 'center' || panelPosition != 'bottom' && panelPosition != 'top'"
     },
+    {
+        "key": "shift+cmd+j",
+        "command": "-workbench.action.search.toggleQueryDetails",
+        "when": "inSearchEditor || searchViewletFocus"
+    },
+    {
+        "key": "shift+cmd+j",
+        "command": "workbench.action.togglePanel"
+    },
 ]
