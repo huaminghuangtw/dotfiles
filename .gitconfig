@@ -67,6 +67,13 @@
     start = !"git init && git add . && git commit --allow-empty -m 'Initial commit'"
     
     save = !"git add --all && git commit -m 'SAVEPOINT'"
+    undo = reset HEAD~ --mixed
+    undo-hard = !"git reset --hard HEAD^"
+
+    wip    = !"git stash push --include-untracked -m 'WIP'"
+    unwip  = stash pop
+    stashes = !"git stash list && git stash show -p"
+
     cm = !"git add . && git commit -m"
     
     rao = remote add origin
@@ -97,12 +104,9 @@
     goto = "!f() { git switch "$1" 2>/dev/null || git switch -c "$1"; }; f"
 
     p = push
-    pt = push --tags
     
     tags = tag -n1 --list
-    
-    stashes = stash list
-    
+        
     # Modify the latest commit with all current changes and a new commit message
     amend = commit --amend --all -m
 
@@ -114,9 +118,6 @@
         git branch --merged \"$base_branch\" | grep -vE \"(^\\*|$base_branch)\" | xargs -r git branch -d; \
         git fetch -p; \
     }; f"
-
-    undo = reset HEAD~ --mixed
-    undo-hard = !"git reset --hard HEAD^"
     
     # Reset work that you never committed.
     # Note that you can run the `git reflog` command and find the SHA of the commit, if you realize later that you made a mistake with the reset.
