@@ -154,4 +154,9 @@
         "key": "shift+cmd+j",
         "command": "workbench.action.togglePanel"
     },
+    {
+        "key": "ctrl+cmd+f",
+        "command": "-workbench.action.toggleFullScreen",
+        "when": "!isIOS"
+    },
 ]
