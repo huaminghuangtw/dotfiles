@@ -114,4 +114,5 @@
     "python.createEnvironment.trigger": "off",
     "chat.contextUsage.enabled": false,
     "chat.viewSessions.orientation": "stacked",
+    "workbench.editor.showTabs": "none",
 }
