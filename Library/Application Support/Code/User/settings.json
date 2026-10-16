@@ -115,4 +115,5 @@
     "chat.contextUsage.enabled": false,
     "chat.viewSessions.orientation": "stacked",
     "workbench.editor.showTabs": "none",
+    "workbench.editor.editorActionsLocation": "hidden",
 }
