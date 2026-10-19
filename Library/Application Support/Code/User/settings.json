@@ -116,4 +116,8 @@
     "chat.viewSessions.orientation": "stacked",
     "workbench.editor.showTabs": "none",
     "workbench.editor.editorActionsLocation": "hidden",
+    "chat.editor.preferCopilotHarness": false,
+    "chat.defaultToCopilotHarness": false,
+    "chat.copilotHarnessIntroduction.mode": "off",
+    "chat.harnessSwitchFeedbackSurvey.enabled": false,
 }
