@@ -11,6 +11,7 @@
     "git.autofetch": true,
     "files.exclude": {
         "**/.git": false,
+        "**/.github": false,
     },
     "workbench.startupEditor": "none",
     "files.autoSave": "afterDelay",
@@ -120,4 +121,5 @@
     "chat.defaultToCopilotHarness": false,
     "chat.copilotHarnessIntroduction.mode": "off",
     "chat.harnessSwitchFeedbackSurvey.enabled": false,
+    "chat.planAgent.defaultModel": "DeepSeek V4.1 Flash (deepseek)",
 }
