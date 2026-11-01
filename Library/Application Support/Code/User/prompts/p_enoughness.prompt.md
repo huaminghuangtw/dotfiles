@@ -1,5 +1,4 @@
 ---
-name: p_enoughness
 description: "Drafts a Chinese Enoughness weekly issue from user-selected notes: reads notes and 1-hop neighbours via obsidian-cli, converges on one theme plus three shareable sections, and emits a per-section source map. Use when assembling the next Enoughness issue."
 ---
 

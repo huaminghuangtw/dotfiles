@@ -1,5 +1,4 @@
 ---
-name: p_prepare-writing
 description: "Surfaces publishable blog post ideas from the Obsidian vault and evaluates them for publication readiness in two phases (discovery, then review). Use when looking for what to write next; never invents ideas."
 ---
 

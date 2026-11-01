@@ -1,5 +1,4 @@
 ---
-name: p_expand-note
 description: "Expands a note into a fuller evergreen note, adding context, examples, supporting quotes at the top, and a related-concepts section while preserving the original intent, tone, and content. Use when a note deserves deepening."
 ---
 

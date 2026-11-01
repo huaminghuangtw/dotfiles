@@ -1,5 +1,4 @@
 ---
-name: p_decision-making
 description: "Decision-partner workflow: interviews you on what is actually at stake, applies lenses that change the answer, then commits to a position instead of validating your framing. Use when weighing a decision, trade-off, or irreversible choice."
 ---
 

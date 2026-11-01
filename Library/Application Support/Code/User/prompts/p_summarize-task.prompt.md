@@ -1,5 +1,4 @@
 ---
-name: p_summarize-task
 description: "Summarizes the current chat session, drafts a TIL post about what was learned, proposes a git commit message, and hands the journal entry to session-journal. Use at the end of a working session."
 ---
 

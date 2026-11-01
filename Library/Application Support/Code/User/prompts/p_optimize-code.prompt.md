@@ -1,5 +1,4 @@
 ---
-name: p_optimize-code
 description: "Four-phase code optimization pipeline: clarify requirements, diagnose across quality lenses (correctness to SOLID to root cause), then rank the top opportunities by impact over effort with a WHY contract for each. Use for refactoring or optimizing a technical artifact."
 ---
 

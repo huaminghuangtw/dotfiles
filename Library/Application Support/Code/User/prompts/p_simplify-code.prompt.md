@@ -1,5 +1,4 @@
 ---
-name: p_simplify-code
 description: "Applies Steve Jobs design thinking as four phases of questions (strip to essentials, reframe from zero, pursue elegance, raise the bar and synthesize) to any product, workflow, writing, or resume. Use when something needs simplifying and elevating."
 ---
 

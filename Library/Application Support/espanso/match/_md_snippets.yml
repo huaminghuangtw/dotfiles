@@ -3,5 +3,3 @@ matches:
       replace: "\n\n| ![]() |\n| :-: |\n| <sub>[Source]()</sub> |\n\n"
     - trigger: "!so"
       replace: '"圖片來源：$|$"'
-    - trigger: "!en"
-      replace: "enoughness-$|$.md#"

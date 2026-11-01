@@ -1,5 +1,4 @@
 ---
-name: p_improve-writing
 description: "Sharpens rough or half-formed text into a concise, memorable, quotable statement (1-3 sentences), preserving the core truth and offering two variants when two genuinely different sharpenings exist. Use to crystallize a raw reflection."
 ---
 
