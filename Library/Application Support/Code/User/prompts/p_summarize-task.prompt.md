@@ -11,7 +11,7 @@ Generate a summary based on the chat conversation, capture the session's lesson 
 # Instructions
 
 1. Write a clear, specific summary of the current session.
-2. Create a TIL post at `/Users/huaminghuang/Library/Mobile Documents/iCloud~md~obsidian/Documents/Second-Brain/Today-I-Learned/posts/<kebab-case-title>.md`:
+2. Create a TIL **draft** at `/Users/huaminghuang/Library/Mobile Documents/iCloud~md~obsidian/Documents/Second-Brain/Today-I-Learned/posts/<kebab-case-title>.md`:
     - Explain the lesson as if to a five-year-old: simple words, short sentences, and one concrete analogy.
     - Follow the existing posts' conventions: frontmatter with `title`, `created` (today, `YYYY-MM-DD`), `modified` (same), and `sources` (empty unless the session used external sources).
     - Start the body with "Today I learned…", use a few plain-language sections, and end with a `**Key takeaway:**` line.
