@@ -88,7 +88,7 @@
     "accessibility.signals.chatEditModifiedFile": {
         "sound": "on"
     },
-    "editor.accessibilitySupport": "off",
+    "editor.accessibilitySupport": "on",
     "accessibility.signalOptions.volume": 80,
     "accessibility.signals.chatRequestSent": {
         "sound": "on"
@@ -113,8 +113,6 @@
     "window.commandCenter": false,
     "workbench.browser.showInTitleBar": false,
     "python.createEnvironment.trigger": "off",
-    "chat.contextUsage.enabled": false,
-    "chat.viewSessions.orientation": "stacked",
     "workbench.editor.showTabs": "none",
     "workbench.editor.editorActionsLocation": "hidden",
     "chat.editor.preferCopilotHarness": false,
@@ -122,4 +120,7 @@
     "chat.copilotHarnessIntroduction.mode": "off",
     "chat.harnessSwitchFeedbackSurvey.enabled": false,
     "chat.planAgent.defaultModel": "DeepSeek V4.1 Flash (deepseek)",
+    "chat.agentSessions.showExternal": "last24Hours",
+    "chat.viewSessions.orientation": "stacked",
+    "chat.contextUsage.enabled": false,
 }

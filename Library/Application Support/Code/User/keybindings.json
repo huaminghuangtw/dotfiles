@@ -159,4 +159,24 @@
         "command": "-workbench.action.toggleFullScreen",
         "when": "!isIOS"
     },
+    {
+        "key": "ctrl+shift+alt+j",
+        "command": "-notebook.cell.joinAbove",
+        "when": "notebookEditorFocused"
+    },
+    {
+        "key": "ctrl+shift+alt+j",
+        "command": "agentSessions.hideAgentSessionsSidebar",
+        "when": "agentSessionsViewerOrientation == '2' && agentSessionsViewerPosition == '2'"
+    },
+    {
+        "key": "ctrl+alt+j",
+        "command": "-notebook.cell.joinBelow",
+        "when": "notebookEditorFocused"
+    },
+    {
+        "key": "ctrl+alt+j",
+        "command": "agentSessions.showAgentSessionsSidebar",
+        "when": "!agentSessionsViewerVisible && agentSessionsViewerPosition == '2' || agentSessionsViewerOrientation == '1' && agentSessionsViewerPosition == '2'"
+    },
 ]
