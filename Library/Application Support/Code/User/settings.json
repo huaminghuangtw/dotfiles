@@ -121,6 +121,6 @@
     "chat.harnessSwitchFeedbackSurvey.enabled": false,
     "chat.planAgent.defaultModel": "DeepSeek V4.1 Flash (deepseek)",
     "chat.agentSessions.showExternal": "last24Hours",
-    "chat.viewSessions.orientation": "stacked",
     "chat.contextUsage.enabled": false,
+    "chat.viewSessions.orientation": "stacked",
 }
