@@ -54,9 +54,5 @@ dlyt() {
     args+=(-t mp4)
   fi
 
-  if [[ "$url" == *pornhub.com* ]]; then
-    yt-dlp --referer 'https://www.pornhub.com' "${args[@]}" "$url"
-  else
-    yt-dlp "${args[@]}" "$url"
-  fi
+  yt-dlp "${args[@]}" "$url"
 }
