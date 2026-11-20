@@ -25,11 +25,13 @@ One at a time, so a content worktree with uncommitted edits cannot block the res
 
 ```bash
 cd ~/Sites/huam.ing && while IFS= read -r p; do
-  git submodule update --remote --ff-only -- "$p" || echo "SKIP $p"
+  branch=$(git -C "$p" rev-parse --abbrev-ref HEAD)
+  git -C "$p" fetch --quiet origin &&
+    git -C "$p" merge --quiet --ff-only "origin/$branch" || echo "SKIP $p"
 done < <(git config -f .gitmodules --get-regexp '^submodule\..*\.path$' | awk '{print $2}')
 ```
 
-`--ff-only` on purpose: this must never create merge commits inside a content repo. Keep the list of skipped paths for the final report; a skip is not a failure and must not stop the publish.
+A submodule with uncommitted edits or a detached HEAD fails the merge and is reported as `SKIP`; a skip is not a failure and must not stop the publish. Keep the list of skipped paths for the final report.
 
 ## 3. Stage and look at what changed
 
